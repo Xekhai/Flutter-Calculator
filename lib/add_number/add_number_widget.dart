@@ -5,7 +5,6 @@ import '../flutter_flow/flutter_flow_widgets.dart';
 import '../custom_code/actions/index.dart' as actions;
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AddNumberWidget extends StatefulWidget {
   const AddNumberWidget({Key key}) : super(key: key);
@@ -255,9 +254,12 @@ class _AddNumberWidgetState extends State<AddNumberWidget> {
                       'Well, the sum is ',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.bodyText1,
+
                     ),
                     Text(
+                      valueOrDefault<String>(
                       numberSum,
+                      '...',),
                       style: FlutterFlowTheme.bodyText1,
                     ),
                   ],
